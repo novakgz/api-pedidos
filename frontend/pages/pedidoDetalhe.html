@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/pedidoDetalhe.css">
+    <script src="../js/pedidoDetalhe.js"></script>
+    <script src="../js/main.js"></script>
+    <title>Detalhes do Pedido</title>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <button class="home-btn" onclick="window.location.href='index.html'">HOME</button>
+        </div>
+        <div class="header">
+            <h1>Detalhes do Pedido</h1>
+            <div id="pedido-details" class="header-dados">
+                <p>Número: <span id="pedido-numero"></span></p>
+                <p>Cliente: <span id="pedido-cliente"></span></p>
+            </div>
+        </div>
+        <div class="content">
+                <span class="desc">Listagem de Itens</span>
+            <div class="row">
+                <div class="box">
+                    <form>
+                        <input type="number" id="indice-item" class="campo" placeholder="Índice" required/>
+                        <button class="btn" type="submit" onclick="buscarItemPorIndice()">Buscar</button>
+                    </form>
+                </div>
+                <div class="btns">
+                    <button class="btn" onclick="listarTodosItensPedido()">Listar todos</button>
+                    <button class="btn" onclick="window.location.href='#modal-add-item'">Adicionar</button>
+                </div>
+            </div>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th class="tabela_indice">#</th>
+                        <th class="tabela_sku">SKU</th>
+                        <th class="tabela_produto">Produto</th>
+                        <th class="tabela_preco">Preço (R$)</th>
+                        <th class="tabela_quant">Qtd</th>
+                        <th class="tabela_btn">Pedidos</th>
+                    </tr>
+                </thead>
+                <tbody class="detalhes_tabela">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="modal-pedidos" class="modal">
+        <div class="modal__content">
+            <h1>Pedidos Encontrados</h1>
+            <table class="modal__list">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Cliente</th>
+                        <th>Detalhes</th>
+                    </tr>
+                </thead>
+                <tbody class="lista-pedidos">
+
+                </tbody>
+            </table>
+            <div class="modal__footer">
+                <button class="modal__footer-btn" onclick="window.location.href='#'">Fechar</button>
+            </div>
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+    </div>
+    <div id="modal-add-item" class="modal">
+        <div class="modal__content">
+            <h1>Adicionar Item</h1>
+            <div class="modal__form">
+                <form>
+                    <div class="modal__form-row">
+                        <input id="item-sku" type="text" placeholder="SKU" class="campo" required>
+                    </div>
+                    <div class="modal__form-row">
+                        <input id="item-produto" type="text" placeholder="Produto" class="campo" required>
+                    </div>
+                    <div class="modal__form-row">
+                        <input id="item-preco" type="number" placeholder="Preço (R$)" step="0.01" class="campo" required>
+                    </div>
+                    <div class="modal__form-row">
+                        <input id="item-quantidade" type="number" placeholder="Quantidade" class="campo" required>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer-btn-plus" onclick="fecharModal('modal-add-item')">Cancelar</button>
+                        <button class="modal__footer-btn-plus" type="submit" onclick="adicionarItemPedido()">Adicionar</button>
+                    </div>
+                </form>
+                <a href="#" class="modal__close" id="modal-add-close">&times;</a>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

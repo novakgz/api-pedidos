@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s;
+}
+  
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__content {
+  color: white;
+  font-family: 'Didact Gothic', sans-serif;
+  border-radius: 4px;
+  position: relative;
+  max-width: 90%;
+  background: linear-gradient(135deg, #2a1e36, #540537);
+  padding: 32px;
+}
+
+.modal__content h1{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.modal__list{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.modal__list th{
+  font-weight: 700;
+}
+
+.modal__list tr th:nth-child(1), .modal__list tr td:nth-child(1){
+  width: 15%;
+  text-align: left;
+}
+
+.modal__list tr th:nth-child(2), .modal__list tr td:nth-child(2){
+  margin-left: 10px;
+  width: 60%;
+  text-align: left;
+}
+
+.modal__list tr th:nth-child(3), .modal__list tr td:nth-child(3){
+  width: 25%;
+  text-align: center;
+}
+
+.modal__list button{
+  width: 100%;
+  cursor: pointer;
+  padding: 3px 0;
+  color: white;
+  border:none;
+  font-family: 'Didact Gothic', sans-serif;
+  background: linear-gradient(45deg, #2a1e36, #540537);
+  background-size: 200%, 200%;
+  border-radius: 30px;
+  box-shadow: 0 0 1px 1px #c88df6;
+}
+
+.modal__list button:hover{
+  background: linear-gradient(-135deg, #540537, #2a1e36);
+}
+  
+.modal__footer {
+  text-align: left;
+  margin-top: 20px;
+}
+  
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+  
+.modal__footer-btn {
+  border: none;
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: #2a1e36;
+  box-shadow: 0 0 1px 1px #c88df6;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.modal__footer-btn:hover{
+  background: linear-gradient(45deg, #2a1e36, #540537);
+}
+
+.home{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(45deg, #2a1e36, #540537);
+  background-size: 200%;
+  opacity: .9;
+}
+
+.home:hover{
+  opacity: 1;
+}
+
+.home-btn{
+  cursor: pointer;
+  border: none;
+  height: 100%;
+  padding: 0 40px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: white;
+  opacity: 1;
+  background: none;
+  background-size: 200%;
+}
+
+.home-btn:hover{
+    background: linear-gradient(45deg, #2a1e36, #540537);
+}

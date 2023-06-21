@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cellipse fill='none' stroke-width='1' id='a' rx='600' ry='450'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%232A1E36' href='%23a' transform='rotate(-60 0 0) scale(0.4)'/%3E%3Cuse stroke='%232e1f3a' href='%23a' transform='rotate(-50 0 0) scale(0.5)'/%3E%3Cuse stroke='%2332213f' href='%23a' transform='rotate(-40 0 0) scale(0.6)'/%3E%3Cuse stroke='%23372243' href='%23a' transform='rotate(-30 0 0) scale(0.7)'/%3E%3Cuse stroke='%233c2347' href='%23a' transform='rotate(-20 0 0) scale(0.8)'/%3E%3Cuse stroke='%2341244b' href='%23a' transform='rotate(-10 0 0) scale(0.9)'/%3E%3Cuse stroke='%2346244e' href='%23a' transform=''/%3E%3Cuse stroke='%234c2552' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23512556' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23572659' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%235d265c' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%2363265f' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%23692662' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%236f2565' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%23762567' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%237d246a' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%2383236c' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%238a216e' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%23911f6f' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23981d71' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%239f1b72' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%23a61773' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%23AD1374' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 0 0 10px #2a1e36, 0 0 10px #9000ff;
+    font-weight: 700;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.titulo{
+    font-size: 7rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.diferencial{
+    margin-left: -155px;
+    margin-top: 68px;
+    color: #ad1374;
+    -webkit-transform: rotate(-30deg);
+    font-family: 'Tangerine', cursive;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin: 5px;
+    padding: 15px 0;
+    color: white;
+    border:none;
+    font-family: 'Didact Gothic', sans-serif;
+    background: linear-gradient(45deg, #2a1e36, #540537);
+    background-size: 200%, 200%;
+    border-radius: 30px;
+    box-shadow: 0 0 1px 1px #c88df6;
+}
+
+.btn:hover{
+    background: linear-gradient(-135deg, #540537, #2a1e36);
+}
+
+@media (max-width:500px){
+    .titulo{
+        font-size: 4.5rem;
+    }
+
+    .diferencial{
+        margin-left: -98px;
+        margin-top: 45px;
+    }
+
+    .btn{
+        font-size: 1rem;
+    }
+}

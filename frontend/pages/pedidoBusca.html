@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pedidoBusca.css">
+    <script src="/frontend/js/main.js" type="text/javascript"></script>
+    <title>Novo Pedido</title>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <button class="home-btn" onclick="window.location.href='index.html'">HOME</button>
+        </div>
+        <div class="content">
+            <span class="titulo">Buscar Pedido</span>
+            <form class="formulario">
+                <div class="row">
+                    <input id="numero-pedido" class="campo" type="number" placeholder="Número" required/>
+                </div>
+                <button class="btn" type="submit" onclick="buscarPedido()">BUSCAR POR NÚMERO</button>
+            </form>
+            <div class="divisor">OU</div>
+            <button class="btn" onclick="buscarTodosPedidos()">BUSCAR TODOS</button>
+            <span class="link">Ainda não abriu um pedido? <a href="pedidoNovo.html">Novo Pedido</a></span>
+        </div>
+    </div>
+    <div id="modal-pedidos" class="modal">
+        <div class="modal__content">
+            <h1>Pedidos Encontrados</h1>
+            <table class="modal__list">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Cliente</th>
+                        <th>Detalhes</th>
+                    </tr>
+                </thead>
+                <tbody class="lista-pedidos">
+
+                </tbody>
+            </table>
+            <span class="mensagem"></span>
+            <div class="modal__footer">
+                <button class="modal__footer-btn" onclick="window.location.href='#'">Fechar</button>
+            </div>
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+    </div>
+</body>
+</html>

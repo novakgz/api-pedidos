@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cpath fill='none' stroke-width='1' id='a' d='M0.74-509.63l485.39 352.65l-185.4 570.61h-599.97l-185.4-570.61L0.74-509.63 M0.74-510.87l-486.56 353.51l185.85 571.99h601.42L487.3-157.36L0.74-510.87L0.74-510.87z'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%232A1E36' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%2330203c' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23372242' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%233e2348' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%2345244e' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%234d2553' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23562658' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%235e265d' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%23672661' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%23712565' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%237a2469' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%2384236c' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%238e206f' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%23981d71' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%23a31973' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%23AD1374' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Didact Gothic', sans-serif;
+    color: white;
+}
+
+.header h1{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-dados{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(45deg, #2a1e36, #540537);
+    background-size: 200%;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.header-dados p:nth-child(1){
+    width: 30%;
+}
+
+.header-dados p:nth-child(2){
+    width: 70%;
+}
+
+.header-dados span{
+    font-weight: 400;
+}
+
+.content{
+    background: linear-gradient(135deg, #2a1e36, #540537);
+    background-size: 200%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 90vw;
+}
+
+.desc{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.box{
+    width: 50%;
+}
+
+.btns{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.campo{
+    background: none;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #c88df6;
+    color: white;
+    width: 20%;
+    margin-right: 10px;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 5px 15px;
+    color: white;
+    border:none;
+    font-family: 'Didact Gothic', sans-serif;
+    background: linear-gradient(45deg, #2a1e36, #540537);
+    background-size: 200%, 200%;
+    border-radius: 30px;
+    box-shadow: 0 0 1px 1px #c88df6;
+}
+
+.btn:hover{
+    background: linear-gradient(-135deg, #540537, #2a1e36);
+}
+
+.tabela{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+}
+
+.tabela tr th{
+    font-size: 1rem;
+}
+
+
+.tabela tr th:nth-child(1), .tabela tr td:nth-child(1){
+    width: 5%;
+    text-align: left;
+}
+
+.tabela tr th:nth-child(2), .tabela tr td:nth-child(2){
+    width: 18%;
+    text-align: left;
+}
+
+.tabela tr th:nth-child(3), .tabela tr td:nth-child(3){
+    width: 40%;
+    text-align: left;
+}
+
+.tabela tr th:nth-child(4), .tabela tr td:nth-child(4){
+    width: 17%;
+    text-align: right;
+}
+
+.tabela tr th:nth-child(5), .tabela tr td:nth-child(5){
+    width: 5%;
+    text-align: right;
+}
+
+.tabela tr th:nth-child(6), .tabela tr td:nth-child(6){
+    width: 15%;
+    text-align: center;
+}
+
+.tabela button{
+    width: 100%;
+    cursor: pointer;
+    padding: 3px 0;
+    color: white;
+    border:none;
+    font-family: 'Didact Gothic', sans-serif;
+    background: linear-gradient(45deg, #2a1e36, #540537);
+    background-size: 200%, 200%;
+    border-radius: 30px;
+    box-shadow: 0 0 1px 1px #c88df6;
+}
+
+.tabela button:hover{
+    background: linear-gradient(-135deg, #540537, #2a1e36);
+}
+
+.modal__form-row{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.modal__form-row .campo{
+    width: 100%;
+}
+
+.modal__footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.modal__footer-btn-plus {
+    border: none;
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: #2a1e36;
+    box-shadow: 0 0 1px 1px #c88df6;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+  
+.modal__footer-btn-plus:hover{
+    background: linear-gradient(45deg, #2a1e36, #540537);
+}
+
+@media (max-width:500px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-dados{
+        padding: 10px 10px;
+        width: 85%;
+    }
+
+    .header h1{
+        font-size: 3rem;
+    }
+
+    .content{
+        padding: 10px;
+    }
+
+    .desc{
+        font-size: 1.5rem;
+    }
+
+    .campo{
+        font-size: 0.75rem;
+        width: 25%;
+    }
+
+    .btn{
+        font-size: 0.75rem;
+        padding: 5px 5px;
+    }
+
+    .tabela tr th, .tabela tr td{
+        font-size: 0.75rem;
+    }
+
+    .tabela button{
+        font-size: 0.5rem;
+    }
+}
