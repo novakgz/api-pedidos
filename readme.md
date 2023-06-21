@@ -1,6 +1,6 @@
--Trabalho final da disciplina APi Gateway & Integration
--MBA Full Stack Developer na Faculdade Impacta
--Gabriel Novak Zambuzi - RA 2203254
+- Trabalho final da disciplina APi Gateway & Integration
+- MBA Full Stack Developer na Faculdade Impacta
+- Gabriel Novak Zambuzi - RA 2203254
 
 Especificação:
 - Constriuir uma aplicação com base na modelagem:
