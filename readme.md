@@ -4,8 +4,8 @@ Feito por Gabriel Novak Zambuzi - RA 2203254
 
 Especificação:
 - Constriuir uma aplicação com base na modelagem:
-  PEDIDO -> id (PK), numero (UK), Cliente
-  ITEM_PEDIDO -> id (PK), numero (FK), indice, SKU, Produto, Preco, Quantidade
+  + PEDIDO -> id (PK), numero (UK), Cliente
+  + ITEM_PEDIDO -> id (PK), numero (FK), indice, SKU, Produto, Preco, Quantidade
 
 - Consumir os endpoint:
     POST /api/v1/pedido
